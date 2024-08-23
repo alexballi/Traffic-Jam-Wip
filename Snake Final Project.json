@@ -1,0 +1,160 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "664fe1f4-041c-44ff-bf1e-1ea2f6102093",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Snake Final Project",
+    "description": "",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wall Grey Flat.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wall Grey Flat.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Sokoban/Wall/a490118d306d8a2db9ddddcc8bbfc28a5c2a0f0f07c6bf76958db479f9c1d907_Wall Grey Flat.png",
+          "name": "Wall Grey Flat.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wall Brick Flat.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wall Brick Flat.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Sokoban/Wall/2982a2d92818e1d6aaa0d818cee12569b6259f0ce5372dd402262a17be17f8b2_Wall Brick Flat.png",
+          "name": "Wall Brick Flat.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wall Grey Flat2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "a490118d306d8a2db9ddddcc8bbfc28a5c2a0f0f07c6bf76958db479f9c1d907_Wall Grey Flat.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Sokoban/Wall/a490118d306d8a2db9ddddcc8bbfc28a5c2a0f0f07c6bf76958db479f9c1d907_Wall Grey Flat.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Car Blue_Moving_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "22ec2af9db9d687f198e73399ba19d991240d4423d68e91e2b1ea8aabefc2cf5_Car Blue_Moving_2.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Tiny Pixel Cars/22ec2af9db9d687f198e73399ba19d991240d4423d68e91e2b1ea8aabefc2cf5_Car Blue_Moving_2.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/traffic light_right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "5594236000422901df4c47652e6bebbddc44d8f18b2b0ef71ee3335dc036f1b9_traffic light_right.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Isometric City Pack/props/5594236000422901df4c47652e6bebbddc44d8f18b2b0ef71ee3335dc036f1b9_traffic light_right.png",
+          "name": "gdevelop-asset-store"
+        }
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/untitled-scene"
+    }
+  ],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/sound"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/visuals"
+    }
+  ],
+  "eventsFunctionsExtensions": [],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
