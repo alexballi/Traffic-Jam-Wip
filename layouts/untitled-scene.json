@@ -22,7 +22,14 @@
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "Score2",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -101,8 +108,8 @@
       "name": "Car_Head",
       "persistentUuid": "f2275141-d7df-41a2-a148-c97c6b0a3453",
       "width": 0,
-      "x": 366,
-      "y": 370,
+      "x": 380,
+      "y": 354,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -114,12 +121,60 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Score",
+      "name": "GameTime",
       "persistentUuid": "43de2ccf-1d85-4e0d-a13b-45b9bcad9287",
       "width": 0,
-      "x": 852,
-      "y": 81,
+      "x": 910,
+      "y": 70,
       "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewText",
+      "persistentUuid": "00f3263c-148c-4678-bba4-2187a0dda7d3",
+      "width": 0,
+      "x": 839,
+      "y": 33,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewText2",
+      "persistentUuid": "60c69a81-ef1a-42cf-9871-d95e56ecf4a2",
+      "width": 0,
+      "x": 1102,
+      "y": 33,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Score",
+      "persistentUuid": "49a68322-eb2a-408d-8c3f-07b157a96e31",
+      "width": 0,
+      "x": 1141,
+      "y": 68,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -286,6 +341,129 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
+      "name": "GameTime",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 20,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 20,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NewText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Time Elapsed:",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Time Elapsed:",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 30,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NewText2",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Score:",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Score:",
+        "font": "",
+        "textAlignment": "left",
+        "characterSize": 30,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
       "name": "Score",
       "smoothed": true,
       "type": "TextObject::Text",
@@ -337,6 +515,15 @@
         "objectName": "StopLight"
       },
       {
+        "objectName": "GameTime"
+      },
+      {
+        "objectName": "NewText"
+      },
+      {
+        "objectName": "NewText2"
+      },
+      {
         "objectName": "Score"
       }
     ]
@@ -365,11 +552,32 @@
         },
         {
           "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "StopLight",
+            "RandomInRange(100,700)",
+            "RandomInRange(50,450)",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "ResetTimer"
           },
           "parameters": [
             "",
-            "\"Score\""
+            "\"GameTime\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"GameTime\""
           ]
         }
       ]
@@ -965,7 +1173,7 @@
           },
           "parameters": [
             "",
-            "\"Score\""
+            "\"GameTime\""
           ]
         },
         {
@@ -1023,10 +1231,128 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
+            "GameTime",
+            "Text",
+            "=",
+            "ToString(round(TimerElapsedTime(\"GameTime\")))"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Car_Head",
+            "StopLight",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "StopLight",
+            "=",
+            "RandomInRange(100,700)",
+            "=",
+            "RandomInRange(50,450)"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Score2",
+            "+",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+          },
+          "parameters": [
             "Score",
             "Text",
             "=",
-            "ToString(round(TimerElapsedTime(\"Score\")))"
+            "+Score2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Up"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Down"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Right"
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "UnPauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"GameTime\""
           ]
         }
       ]
