@@ -128,6 +128,19 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Isometric City Pack/props/5594236000422901df4c47652e6bebbddc44d8f18b2b0ef71ee3335dc036f1b9_traffic light_right.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Convertible Purple_Moving_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bf9f808a028b247119dc061e690167a888a0df61f0794bd6dfa029db04402b47_Convertible Purple_Moving_3.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Tiny Pixel Cars/bf9f808a028b247119dc061e690167a888a0df61f0794bd6dfa029db04402b47_Convertible Purple_Moving_3.png",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
