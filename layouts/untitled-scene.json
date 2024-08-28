@@ -25,7 +25,25 @@
   "variables": [
     {
       "folded": true,
-      "name": "Score2",
+      "name": "Score",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "TimerStarted",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "Speed",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "folded": true,
+      "name": "Variable",
       "type": "number",
       "value": 0
     }
@@ -108,8 +126,8 @@
       "name": "Car_Head",
       "persistentUuid": "f2275141-d7df-41a2-a148-c97c6b0a3453",
       "width": 0,
-      "x": 380,
-      "y": 354,
+      "x": 392,
+      "y": 382,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -169,12 +187,76 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Score",
+      "name": "Points",
       "persistentUuid": "49a68322-eb2a-408d-8c3f-07b157a96e31",
       "width": 0,
       "x": 1141,
       "y": 68,
       "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SlowSign",
+      "persistentUuid": "c980d152-51dc-4a78-a8fd-d697c8cbec3f",
+      "width": 0,
+      "x": 662,
+      "y": 584,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SlowSign",
+      "persistentUuid": "dcb348b6-d32b-492f-9ce4-8419fbd06e72",
+      "width": 0,
+      "x": 148,
+      "y": 595,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SlowSign",
+      "persistentUuid": "ac0f6f20-9b98-4903-a24e-23549eb24216",
+      "width": 0,
+      "x": 662,
+      "y": 93,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SlowSign",
+      "persistentUuid": "dd0c23b3-4bbf-4c51-82c8-db4ff71e4afd",
+      "width": 0,
+      "x": 128,
+      "y": 95,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -464,7 +546,7 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "Score",
+      "name": "Points",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -507,7 +589,14 @@
       "name": "Car_Tail",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "ShadowCloneOrder",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -560,6 +649,66 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "SlowSign",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "b9541b60fd71cefb3c98c2f02db1a7a7c882a4644f0866d526bad16b79220f81_sign caution_right.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 0
+                      },
+                      {
+                        "x": 15,
+                        "y": 29
+                      },
+                      {
+                        "x": 1,
+                        "y": 29
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -584,10 +733,13 @@
         "objectName": "NewText2"
       },
       {
-        "objectName": "Score"
+        "objectName": "Points"
       },
       {
         "objectName": "Car_Tail"
+      },
+      {
+        "objectName": "SlowSign"
       }
     ]
   },
@@ -621,7 +773,7 @@
             "",
             "StopLight",
             "RandomInRange(100,700)",
-            "RandomInRange(50,450)",
+            "RandomInRange(50,650)",
             ""
           ]
         },
@@ -631,16 +783,27 @@
           },
           "parameters": [
             "",
-            "\"GameTime\""
+            "\"Turn\""
           ]
         },
         {
           "type": {
-            "value": "PauseTimer"
+            "value": "SetNumberVariable"
           },
           "parameters": [
-            "",
-            "\"GameTime\""
+            "TimerStarted",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Speed",
+            "=",
+            "3"
           ]
         }
       ]
@@ -699,6 +862,41 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "Car_Head",
+            "Down",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"Turn\"",
+            ">",
+            "0.15"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Car_Head",
+            "Car_Tail",
+            "0.1",
+            "",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -744,6 +942,15 @@
             "Left",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"Turn\""
           ]
         }
       ]
@@ -802,6 +1009,41 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "Car_Head",
+            "Up",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"Turn\"",
+            ">",
+            "0.15"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Car_Head",
+            "Car_Tail",
+            "0.1",
+            "",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -847,6 +1089,15 @@
             "Right",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"Turn\""
           ]
         }
       ]
@@ -905,6 +1156,41 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "Car_Head",
+            "Right",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"Turn\"",
+            ">",
+            "0.15"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Car_Head",
+            "Car_Tail",
+            "0.1",
+            "",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -950,6 +1236,15 @@
             "Right",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"Turn\""
           ]
         }
       ]
@@ -1008,6 +1303,41 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "Car_Head",
+            "Left",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"Turn\"",
+            ">",
+            "0.15"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Car_Head",
+            "Car_Tail",
+            "0.1",
+            "",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -1053,6 +1383,15 @@
             "Left",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"Turn\""
           ]
         }
       ]
@@ -1073,6 +1412,16 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "Car_Head",
+            "-",
+            "Speed"
+          ]
+        },
         {
           "type": {
             "value": "RotateTowardAngle"
@@ -1083,16 +1432,6 @@
             "0",
             ""
           ]
-        },
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "Car_Head",
-            "-",
-            "1"
-          ]
         }
       ]
     },
@@ -1114,6 +1453,16 @@
       "actions": [
         {
           "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "Car_Head",
+            "+",
+            "Speed"
+          ]
+        },
+        {
+          "type": {
             "value": "RotateTowardAngle"
           },
           "parameters": [
@@ -1121,16 +1470,6 @@
             "90",
             "0",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "Car_Head",
-            "+",
-            "1"
           ]
         }
       ]
@@ -1153,6 +1492,16 @@
       "actions": [
         {
           "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "Car_Head",
+            "-",
+            "Speed"
+          ]
+        },
+        {
+          "type": {
             "value": "RotateTowardAngle"
           },
           "parameters": [
@@ -1160,16 +1509,6 @@
             "180",
             "0",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreX"
-          },
-          "parameters": [
-            "Car_Head",
-            "-",
-            "1"
           ]
         }
       ]
@@ -1192,6 +1531,16 @@
       "actions": [
         {
           "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "Car_Head",
+            "+",
+            "Speed"
+          ]
+        },
+        {
+          "type": {
             "value": "RotateTowardAngle"
           },
           "parameters": [
@@ -1199,16 +1548,6 @@
             "0",
             "0",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreX"
-          },
-          "parameters": [
-            "Car_Head",
-            "+",
-            "1"
           ]
         }
       ]
@@ -1227,6 +1566,12 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -1281,6 +1626,18 @@
             "Down",
             "=",
             "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "237375__squareal__car-crash.wav",
+            "",
+            "100",
+            "1"
           ]
         }
       ]
@@ -1334,7 +1691,7 @@
             "=",
             "RandomInRange(100,700)",
             "=",
-            "RandomInRange(50,450)"
+            "RandomInRange(50,650)"
           ]
         },
         {
@@ -1342,7 +1699,7 @@
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "Score2",
+            "Score",
             "+",
             "1"
           ]
@@ -1352,10 +1709,22 @@
             "value": "TextContainerCapability::TextContainerBehavior::SetValue"
           },
           "parameters": [
-            "Score",
+            "Points",
             "Text",
             "=",
-            "+Score2"
+            "+Score"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "435497__etcd_09__car-horn-honk.wav",
+            "",
+            "100",
+            "1"
           ]
         }
       ]
@@ -1406,16 +1775,333 @@
               ]
             }
           ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "TimerStarted",
+            "=",
+            "0"
+          ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "UnPauseTimer"
+            "value": "ResetTimer"
           },
           "parameters": [
             "",
             "\"GameTime\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "TimerStarted",
+            "=",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ShadowClones::AnimateShadowClones"
+          },
+          "parameters": [
+            "",
+            "Car_Head",
+            "Car_Tail",
+            "Score",
+            "11",
+            "0",
+            "0",
+            "",
+            "1",
+            "no",
+            "no",
+            "yes",
+            "no",
+            "no",
+            "no",
+            "no",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Car_Head",
+            "Car_Tail",
+            "0.1",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "Car_Tail",
+            "ShadowCloneOrder",
+            ">",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Car_Head",
+            "Left",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Car_Head",
+            "Right",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Car_Head",
+            "Up",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Car_Head",
+            "Down",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"GameTime\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Car_Tail",
+            "StopLight",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "StopLight",
+            "=",
+            "RandomInRange(100,700)",
+            "=",
+            "RandomInRange(50,650)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Car_Head",
+            "SlowSign",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Speed",
+            "=",
+            "5"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"SlowTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "SlowSign",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "185743__enric592__car-motor.wav",
+            "",
+            "100",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"SlowTimer\"",
+            ">=",
+            "10"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Speed",
+            "=",
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"SlowTimer\"",
+            "<",
+            "10"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ShadowClones::DeleteShadowClones"
+          },
+          "parameters": [
+            "",
+            "Car_Head",
+            "Car_Tail",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "StopLight",
+            "SlowSign",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "StopLight",
+            "=",
+            "RandomInRange(100,700)",
+            "=",
+            "RandomInRange(50,650)"
           ]
         }
       ]

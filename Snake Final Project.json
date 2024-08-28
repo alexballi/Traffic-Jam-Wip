@@ -1,9 +1,9 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 99,
-    "major": 4,
-    "minor": 0,
+    "build": 209,
+    "major": 5,
+    "minor": 4,
     "revision": 0
   },
   "properties": {
@@ -141,6 +141,49 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Tiny Pixel Cars/bf9f808a028b247119dc061e690167a888a0df61f0794bd6dfa029db04402b47_Convertible Purple_Moving_3.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sign caution_right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "b9541b60fd71cefb3c98c2f02db1a7a7c882a4644f0866d526bad16b79220f81_sign caution_right.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Isometric City Pack/props/b9541b60fd71cefb3c98c2f02db1a7a7c882a4644f0866d526bad16b79220f81_sign caution_right.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "435497__etcd_09__car-horn-honk.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "435497__etcd_09__car-horn-honk.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "237375__squareal__car-crash.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "237375__squareal__car-crash.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "185743__enric592__car-motor.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "185743__enric592__car-motor.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -167,7 +210,12 @@
       "referenceTo": "/externalEvents/visuals"
     }
   ],
-  "eventsFunctionsExtensions": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shadowclones"
+    }
+  ],
   "externalLayouts": [],
   "externalSourceFiles": []
 }
